@@ -1,6 +1,6 @@
 # Go Digital
 
-**Go Digital Portal** is a comprehensive web platform designed for managing, tracking, and collaborating on Digital Transformation (DX) requests and technical support. It enables users and administrators to coordinate efforts, prioritize projects, provide feedback through comments, and monitor the status of each technology initiative in real time.
+**Go Digital ** is a comprehensive web platform designed for managing, tracking, and collaborating on Digital Transformation (DX) requests and technical support. It enables users and administrators to coordinate efforts, prioritize projects, provide feedback through comments, and monitor the status of each technology initiative in real time.
 
 ---
 
