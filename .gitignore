@@ -1,0 +1,98 @@
+# =========================================================================
+# Root .gitignore for GoDigital Project
+# Handles Node.js / Quasar frontend, C# .NET API, and common editor/OS files.
+# =========================================================================
+
+# -------------------------------------------------------------------------
+# Operating System files
+# -------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# -------------------------------------------------------------------------
+# Editors and IDEs (VS Code, Visual Studio, JetBrains, Rider)
+# -------------------------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+*.userprefs
+
+# -------------------------------------------------------------------------
+# Frontend (go-digital-frontend)
+# -------------------------------------------------------------------------
+# Dependency directories
+go-digital-frontend/node_modules/
+go-digital-frontend/jspm_packages/
+go-digital-frontend/web_modules/
+
+# Quasar & Build outputs
+go-digital-frontend/.quasar/
+go-digital-frontend/dist/
+go-digital-frontend/quasar.config.*.temporary.compiled*
+
+# Cordova & Capacitor
+go-digital-frontend/src-cordova/node_modules/
+go-digital-frontend/src-cordova/platforms/
+go-digital-frontend/src-cordova/plugins/
+go-digital-frontend/src-cordova/www/
+go-digital-frontend/src-capacitor/www/
+go-digital-frontend/src-capacitor/node_modules/
+
+# Logs
+go-digital-frontend/npm-debug.log*
+go-digital-frontend/yarn-debug.log*
+go-digital-frontend/yarn-error.log*
+go-digital-frontend/pnpm-debug.log*
+go-digital-frontend/lerna-debug.log*
+
+# -------------------------------------------------------------------------
+# Backend API (GoDigital.API)
+# -------------------------------------------------------------------------
+# Build / Compilation outputs
+GoDigital.API/bin/
+GoDigital.API/obj/
+
+# User-specific files
+GoDigital.API/*.user
+GoDigital.API/*.userosscache
+GoDigital.API/*.suo
+
+# -------------------------------------------------------------------------
+# Sensitive & Confidential Information / Credentials
+# -------------------------------------------------------------------------
+# Frontend environment files (contain API keys, secret credentials)
+# We ignore actual .env files, but keep .env.example/template if they exist
+go-digital-frontend/.env
+go-digital-frontend/.env.local
+go-digital-frontend/.env.production
+go-digital-frontend/.env.development
+go-digital-frontend/.env.*.local
+
+# Backend Secrets & Configs
+# appsettings.json usually contains default connection strings, but if it has
+# production/secret values, it's safer to use appsettings.local.json or user-secrets.
+GoDigital.API/appsettings.local.json
+GoDigital.API/secrets.json
+
+# If you want to ignore appsettings.json entirely because it contains secrets:
+# GoDigital.API/appsettings.json
+# GoDigital.API/appsettings.Development.json
+
+# User secrets folder (.NET)
+**/UserSecrets/
+**/secrets.json
+
+# Backup/Private files
+*.bak
+*.config.local
+*.local
